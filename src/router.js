@@ -8,29 +8,29 @@ import ContactPage from './routes/ContactPage';
 import Layout from './routes/Layout';
 
 const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: '/',
-        element: <HomePage />
-      },
-      {
-        path: '/about',
-        element: <AboutPage />
-      },
-      {
-        path: '/projects',
-        element: <ProjectsPage />
-      },
-      {
-        path: '/contact',
-        element: <ContactPage />
-      }
-    ]
-  }
+	{
+		path: '/',
+		element: <Layout />,
+		errorElement: <ErrorPage />,
+		children: [
+			{
+				path: '/',
+				element: <HomePage />
+			},
+			{
+				path: '/about',
+				element: <AboutPage />
+			},
+			{
+				path: '/projects',
+				element: <ProjectsPage />
+			},
+			{
+				path: '/contact',
+				element: <ContactPage />
+			}
+		]
+	}
 ]);
 
 export default router;

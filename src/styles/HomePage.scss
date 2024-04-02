@@ -1,0 +1,12 @@
+.home-page {
+    text-align: center;
+    font-size: 2em; // Adjust font size as needed
+  
+    h1 {
+      color: blue; // Highlight your name
+    }
+  
+    p:first-child { // Style the first paragraph (job title)
+      font-weight: bold; // Optional: Make job title bolder
+    }
+  }

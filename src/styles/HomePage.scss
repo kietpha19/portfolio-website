@@ -34,6 +34,11 @@ $font-family: sans-serif; // Adjust for your desired font family
   .brief-intro {
     color: $secondary-color; 
     font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .resume {
+    max-width: 10rem;
   }
 }
 

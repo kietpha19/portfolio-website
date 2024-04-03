@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20.x # You can adjust the node version based on your project requirements
+    commands:
+      - echo Installing NPM dependencies
+      - npm install
+  build:
+    commands:
+      - echo Build started on `date`
+      - npm run build
+  post_build:
+    # Add additional commands here, like copying the build artifacts or deploying to a server
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '**/*' # Capture all files in the build directory
+  base-directory: build  # This assumes your build output is in the 'build' directory
+  discard-paths: no

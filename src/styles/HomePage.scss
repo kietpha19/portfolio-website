@@ -1,12 +1,48 @@
+$primary-color: #1eb3ca; // Adjust for your desired primary color
+$secondary-color: #394cb9; // Adjust for your desired secondary color
+$font-family: sans-serif; // Adjust for your desired font family
+
 .home-page {
-    text-align: center;
-    font-size: 2em; // Adjust font size as needed
-  
-    h1 {
-      color: blue; // Highlight your name
-    }
-  
-    p:first-child { // Style the first paragraph (job title)
-      font-weight: bold; // Optional: Make job title bolder
-    }
+  margin-top: 5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
   }
+}
+
+.col1 {
+  max-width: 70%;
+  margin-right: 2rem;
+  margin-top: 3rem;
+
+  .name {
+    color: $primary-color; 
+    font-weight: bold;
+    font-size: 5rem;
+  }
+
+  .title {
+    color: $primary-color; 
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .about-line {
+    font-size: 2rem;
+  }
+
+  .brief-intro {
+    color: $secondary-color; 
+    font-size: 1.5rem;
+  }
+}
+
+.col2 {
+  margin-top: 5rem;
+  margin-left: 4rem;
+  img {
+    width: 100%; 
+    border: 5px solid $primary-color;
+    border-radius: 100%;
+  }
+}

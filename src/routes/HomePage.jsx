@@ -8,22 +8,22 @@ import ProfilePic from '../images/ProfilePic.png';
 
 const HomePage = () => {
 	return (
-		<Container>
+		<Container className='home-page'>
 			<Row>
-				<Col>
-					<Row>Hello, My name is Kyden Pham.</Row>
-					<Row>I am an associated software engineer.</Row>
-					<Row>
+				<Col className='col1'>
+					<Row className='name'>Kyden Pham</Row>
+					<Row className='title'>Software Engineer</Row>
+					<Row className='about-line'>A Bit About Me</Row>
+					<Row className='brief-intro'>
 						I earned my degree in computer science from the University of Texas-Arlington in December 2023.
 						My enthusiasm for software design fuels my desire to delve into cutting-edge technologies daily.
 						I aspire to apply my expertise and abilities to positively impact the world.
 					</Row>
 				</Col>
-				<Col xs={6} md={4}>
+				<Col xs={6} md={4} className='col2'>
 					<Image src={ProfilePic} roundedCircle />
 				</Col>
 			</Row>
-
 		</Container>
 	);
 };

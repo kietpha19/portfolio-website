@@ -1,0 +1,19 @@
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: inherit; /* Inherit background color from Container */
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    padding: 2rem; 
+
+    .col {
+        text-align: center;
+        justify-content: center;
+
+        .icon {
+            font-size: 1.5rem;
+        }
+    }
+}

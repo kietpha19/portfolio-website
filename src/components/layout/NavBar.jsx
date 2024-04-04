@@ -8,11 +8,11 @@ import ThemeToggle from './ThemeToggle';
 const NavBar = () => {
 	return (
 		<Navbar expand="lg" className="bg-body-tertiary">
-			<Container>
-				<Navbar.Brand as={NavLink} to="/">Portfolio</Navbar.Brand>
+			<Container className='nav-bar'>
+				{/* <Navbar.Brand as={NavLink} to="/">Portfolio</Navbar.Brand> */}
 				<Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Toggle button */}
 				<Navbar.Collapse id="basic-navbar-nav">
-					<Nav className='me-auto'>
+					<Nav className='me-auto' >
 						<Nav.Link as={NavLink} to="/">Home</Nav.Link>
 						<Nav.Link as={NavLink} to="/about">About</Nav.Link>
 						<Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>

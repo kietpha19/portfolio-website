@@ -1,27 +1,28 @@
 // path: '/about'
 import React from 'react';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+// import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import DevSkill from '../components/UI/DevSkill';
+import DevSkill from '../components/about/DevSkill';
+import { webSkills } from '../infor/devSkills';
 
 const AboutPage = () => {
 	return (
-		<Container>
-			<Row>
-        Years of Experience
-			</Row>
-			<Row>
-        1+
-			</Row>
+		<div>
+			<div>
+				<p>Years of Experience</p>
+				<p>1+</p>
+			</div>
+
 			<Container>
-				<Row>
-					<Col>
-						<DevSkill icon='devicon-html5-plain colored' text='HTML5'/>
+				{webSkills.map((skill) => (
+					<Col key={skill.name}>
+						<DevSkill icon={skill.icon} name={skill.name} level={skill.level} />
 					</Col>
-				</Row>
+				))}
 			</Container>
-		</Container>
+
+		</div>
 	);
 };
 

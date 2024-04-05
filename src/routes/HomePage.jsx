@@ -7,19 +7,18 @@ import Image from 'react-bootstrap/Image';
 import { Button } from 'react-bootstrap';
 import ProfilePic from '../images/ProfilePic.png';
 import { resumeLink } from '../infor/links';
+import { name, title, briefIntro } from '../infor/personal';
 
 const HomePage = () => {
 	return (
 		<Container className='home-page'>
 			<Row>
 				<Col className='col1'>
-					<Row className='name'>Kyden Pham</Row>
-					<Row className='title'>Software Engineer</Row>
+					<Row className='name'>{name}</Row>
+					<Row className='title'>{title}</Row>
 					<Row className='about-line'>A Bit About Me</Row>
 					<Row className='brief-intro'>
-						I earned my degree in computer science from the University of Texas-Arlington in December 2023.
-						My enthusiasm for software design fuels my desire to delve into cutting-edge technologies daily.
-						I aspire to apply my expertise and abilities to positively impact the world.
+						{briefIntro}
 					</Row>
 					<Row className='resume'>
 						<a href={resumeLink} target="_blank" rel="noopener noreferrer">

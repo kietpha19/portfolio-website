@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { ThemeContext } from '.';
 
 const ThemeContextProvider = ({ children }) => {
-	const [theme, setTheme] = useState('light');
+	const [theme, setTheme] = useState('dark');
 
 	const context = { theme, setTheme };
 

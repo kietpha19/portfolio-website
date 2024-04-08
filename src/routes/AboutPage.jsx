@@ -9,9 +9,9 @@ import { webSkills } from '../infor/devSkills';
 const AboutPage = () => {
 	return (
 		<div className='about-page'>
-			<div>
-				<p>Years of Experience</p>
-				<p>1+</p>
+			<div className='experience'>
+				<p className='text'>Years of Experience</p>
+				<p className='year'>1+</p>
 			</div>
 
 			<Container className='skills-container'>

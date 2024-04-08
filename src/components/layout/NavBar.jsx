@@ -9,7 +9,6 @@ const NavBar = () => {
 	return (
 		<Navbar expand="lg" className="bg-body-tertiary">
 			<Container className='nav-bar'>
-				{/* <Navbar.Brand as={NavLink} to="/">Portfolio</Navbar.Brand> */}
 				<Navbar.Toggle aria-controls="basic-navbar-nav" /> {/* Toggle button */}
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className='me-auto' >

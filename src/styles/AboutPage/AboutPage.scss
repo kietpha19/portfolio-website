@@ -1,16 +1,33 @@
 .about-page{
-    margin-bottom: 10%;
+    margin: 5%;
+    padding: auto;
+
     .experience {
-        text-align: center;
         padding: 2rem;
+        margin: auto;
+        border: 1px solid;
+        border-radius: 5px;
+        width: 20rem;
+        text-align: center;
+        justify-content: center;
+        color: $clr-primary;
+
+        .text {
+            font-size: $fs-lg;
+        }
+
+        .year {
+            font-size: $fs-2xl;
+        }
     }
 
     .skills-container {
         padding: 2rem;
-        margin: 0 auto; /* Center the container horizontally */
-          
-        .col {
-            padding: 2rem;
-        }
+        margin: auto; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3.6rem;
+        width: 100%;
     }
 }

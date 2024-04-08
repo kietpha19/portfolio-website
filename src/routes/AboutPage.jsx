@@ -1,8 +1,5 @@
 // path: '/about'
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import DevSkill from '../components/about/DevSkill';
 import { webSkills } from '../infor/devSkills';
 
@@ -14,15 +11,12 @@ const AboutPage = () => {
 				<p className='year'>1+</p>
 			</div>
 
-			<Container className='skills-container'>
-				<Row>
-					{webSkills.map((skill) => (
-						<Col key={skill.name}>
-							<DevSkill icon={skill.icon} name={skill.name} level={skill.level} />
-						</Col>
-					))}
-				</Row>
-			</Container>
+			<p>My Full-Stack Skills</p>
+			<div className='skills-container'>
+				{webSkills.map((skill) => (
+					<DevSkill key={skill.name} icon={skill.icon} name={skill.name} level={skill.level} />
+				))}
+			</div>
 
 		</div>
 	);

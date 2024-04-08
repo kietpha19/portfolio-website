@@ -2,31 +2,20 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: inherit; /* Inherit background color from Container */
+    background-color: $clr-background;
     display: flex;
-    gap: 0.8rem;
-    justify-content: center;
-    padding: 2rem; 
+    justify-content: space-around;
+    padding: auto; 
+    font-size: $fs-base;
 
-    .col {
-        text-align: center;
-        justify-content: center;
-        font-weight: bold;
-        font-size: 1.5rem;
-        font-family: 'Courier New', Courier, monospace;
-
-        & a {
-            //color: rgb(77, 74, 74);
-            color: #6c757d;
-
-            &:hover {
-                color: #545e69; /* Slightly darker on hover */
-            }
-        }
-
-        .icon {
-            font-size: 2rem;
-            margin-right: 0.5rem;
-        }
+    .icon {
+        margin-right: 1rem;
+        font-size: $fs-lg;
     }
+
+    a {
+        text-decoration: none;
+        color: $clr-secondary;
+    }
+    
 }

@@ -1,11 +1,12 @@
 .dev-skill {
+    display: block; /* Keep block-level display for card layout */
     border: 1px solid #ddd; /* Adjust border style and color as needed */
-    padding: 1rem; /* Adjust padding for spacing */
+    padding: 1rem; /* Adjust padding for spacing within the card */
     border-radius: 0.5rem; /* Add rounded corners */
-    display: flex; /* Make elements display inline */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
-    max-width: 15rem;
+    width: 12rem; /* Set a fixed width for consistent card size */
+    height: 10rem; /* Set a fixed height for consistent card size */
+    box-sizing: border-box; /* Include padding within the fixed height */
+    text-align: center;
 
     .icon {
         font-size: 2.5rem;

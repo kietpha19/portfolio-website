@@ -25,7 +25,7 @@ export const webSkills = [
 		level: 'Proficient'
 	},
 	{
-		icon: 'devicon-angular-plain colored',
+		icon: 'devicon-angular-plain',
 		name: 'angular',
 		level: 'Beginner'
 	},
@@ -45,7 +45,7 @@ export const webSkills = [
 		level: 'Beginner'
 	},
 	{
-		icon: 'devicon-mysql-original colored',
+		icon: 'devicon-mysql-original',
 		name: 'MySql',
 		level: 'Proficient'
 	},

@@ -1,0 +1,29 @@
+// colors
+
+$clr-primary: #1eb3ca;
+$clr-secondary: #394cb9;
+$clr-error: hsl(0, 56%, 45%);
+$clr-success: hsl(126 56% 45%);
+$clr-disabled: hsl(0 0% 45%);
+$clr-background: hsl(0, 2%, 82%);
+$clr-foreground: hsl(212 0% 10%);
+
+// font sizes
+
+$fs-xs: 1.2rem;
+$fs-sm: 1.4rem;
+$fs-base: 1.6rem;
+$fs-lg: 1.8rem;
+$fs-xl: 2rem;
+$fs-2xl: 2.4rem;
+$fs-3xl: 3rem;
+$fs-4xl: 3.6rem;
+$fs-5xl: 4rem;
+
+// breakpoints
+
+$screen-sm: 480px;
+$screen-md: 768px;
+$screen-lg: 1024px;
+$screen-xl: 1280px;
+$screen-2xl: 1440px;

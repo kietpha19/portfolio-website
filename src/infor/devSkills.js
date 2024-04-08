@@ -60,3 +60,74 @@ export const webSkills = [
 		level: 'Intermediate'
 	}
 ];
+
+export const envToolsSkills = [
+	{
+		icon: 'devicon-git-plain colored',
+		name: 'git',
+		level: 'Proficient'
+	},
+	{
+		icon: 'devicon-github-original',
+		name: 'GitHub',
+		level: 'Proficient'
+	},
+	{
+		icon: 'devicon-jira-plain colored',
+		name: 'jira',
+		level: 'Beginner'
+	},
+	{
+		icon: 'devicon-vscode-plain colored',
+		name: 'vscode',
+		level: 'Proficient'
+	},
+	{
+		icon: 'devicon-eclipse-plain',
+		name: 'eclipse',
+		level: 'Intermediate'
+	},
+	{
+		icon: 'devicon-androidstudio-plain colored',
+		name: 'Android Studio',
+		level: 'Beginner'
+	},
+	{
+		icon: 'devicon-docker-plain colored',
+		name: 'docker',
+		level: 'Beginner'
+	},
+	{
+		icon: 'devicon-postman-plain colored',
+		name: 'postman',
+		level: 'Intermediate'
+	},
+	{
+		icon: 'devicon-figma-plain colored',
+		name: 'figma',
+		level: 'Beginner'
+	}
+];
+
+export const otherSkills = [
+	{
+		icon: 'devicon-anaconda-original colored',
+		name: 'anaconda',
+		level: 'Intermediate'
+	},
+	{
+		icon: 'devicon-scikitlearn-plain colored',
+		name: 'sklear',
+		level: 'Intermediate'
+	},
+	{
+		icon: 'devicon-pytorch-original colored',
+		name: 'pytorch',
+		level: 'Beginner'
+	},
+	{
+		icon: 'devicon-opencv-plain colored',
+		name: 'opencv',
+		level: 'Beginner'
+	}
+];

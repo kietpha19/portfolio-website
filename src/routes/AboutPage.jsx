@@ -11,6 +11,7 @@ const AboutPage = () => {
 				<p className='year'>1+</p>
 			</div>
 
+			<p>My Full-Stack Skills</p>
 			<div className='skills-container'>
 				{webSkills.map((skill) => (
 					<DevSkill key={skill.name} icon={skill.icon} name={skill.name} level={skill.level} />

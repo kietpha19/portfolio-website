@@ -1,9 +1,38 @@
+@import './variables';
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100vw;
+  font-family: 'Inter Variable', Arial, 'sans-serif';
+  font-size: $fs-base;
+  font-weight: 400;
+  line-height: 1.5;
+  // color: $clr-foreground;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+button:disabled {
+  cursor: default;
 }
 
 #root {

@@ -9,7 +9,7 @@ const NavBar = () => {
 			<NavLink to={'/about'}>About</NavLink>
 			<NavLink to={'/projects'}>Project</NavLink>
 			<NavLink to={'/contact'}>Contact</NavLink>
-			<ThemeToggle/>
+			<ThemeToggle className='theme-toggle'/>
 		</div>
 	);
 };

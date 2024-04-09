@@ -1,8 +1,7 @@
 .nav-bar {
-    font-size: $fs-base;
+    font-size: $fs-2xl;
     text-align: center;
     align-items: center;
-    padding: auto;
 
     position: fixed;
     top: 0;
@@ -10,10 +9,33 @@
     
     display: flex;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
     
     a {
         text-decoration: none;
+        color: $clr-primary;
+        padding: 2rem;
+        
+        &:hover {
+            color: $clr-secondary;
+        }
+    }
+
+    a.active {
         color: $clr-secondary;
     }
+    
+    .theme-togger {
+        padding: 2rem;
+    }
 }
+
+@media (max-width: $screen-sm) {
+    .nav-bar {
+      font-size: $fs-base;
+    }
+  
+    a {
+      padding: 1rem;
+    }
+  }

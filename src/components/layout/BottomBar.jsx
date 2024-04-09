@@ -6,7 +6,7 @@ const BottomBar = () => {
 	return (
 		<div className='bottom-bar'>
 			<div className='email'>
-				<img src={gmailIcon} alt="Email Icon" width="32" height="32" className='icon'style={{ marginBottom: '1rem' }}/>
+				<img src={gmailIcon} alt="Email Icon" width="40" height="40" className='icon'style={{ marginBottom: '1rem' }}/>
 				<a href={emailLink} target="_blank" rel="noreferrer">Email</a>
 			</div>
 			<div className='LinkedIn'>

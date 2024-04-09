@@ -4,18 +4,43 @@
     width: 100%;
     background-color: $clr-background;
     display: flex;
-    justify-content: space-around;
-    padding: auto; 
-    font-size: $fs-base;
+    justify-content: center;
+    font-size: clamp($fs-base,50vw,$fs-2xl);
+
+    .email,
+    .LinkedIn,
+    .GitHub,
+    .Facebook
+    {
+        padding: 2rem;
+    }
 
     .icon {
-        margin-right: 1rem;
-        font-size: $fs-lg;
+        padding: 1rem;
     }
 
     a {
         text-decoration: none;
         color: $clr-secondary;
+
+        &:hover {
+            color: lighten($color: $clr-secondary, $amount: 20);
+        }
     }
+}
+
+@media (max-width: $screen-sm) {
+    .bottom-bar {
+      font-size: $fs-base;
+
+      .email,
+      .LinkedIn,
+      .GitHub,
+      .Facebook
+    {
+        padding: 1rem;
+    }
+    }
+  
     
 }

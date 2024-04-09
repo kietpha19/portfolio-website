@@ -1,7 +1,5 @@
 // path: '/'
 import React from 'react';
-import Image from 'react-bootstrap/Image';
-import { Button } from 'react-bootstrap';
 import ProfilePic from '../images/ProfilePic.png';
 import { resumeLink } from '../infor/links';
 import { name, title, briefIntro } from '../infor/personal';
@@ -18,12 +16,12 @@ const HomePage = () => {
 				</p>
 				<p className='resume'>
 					<a href={resumeLink} target="_blank" rel="noopener noreferrer">
-						<Button variant="primary">My Resume</Button>
+						<button >My Resume</button>
 					</a>
 				</p>
 			</div>
 			<div className='profile-pic'>
-				<Image src={ProfilePic} roundedCircle />
+				<img src={ProfilePic} />
 			</div>
 		</div>
 	);

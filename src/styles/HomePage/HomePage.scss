@@ -1,49 +1,58 @@
 .home-page {
   margin: 10%;
-  padding: 1rem;
-  justify-content: space-around;
+  padding: 2rem;
   display: flex;
-}
+  justify-content: center;
+  width: 100%;
+  max-width: $screen-lg;
 
-.about-me {
-  max-width: 70%;
-  margin-right: 2rem;
-  margin-top: 3rem;
+  .about-me {
+    padding: 2rem;
+  
+    .name {
+      color: $clr-primary; 
+      font-weight: bold;
+      font-size: $fs-5xl;
+    }
+  
+    .title {
+      color: $clr-primary; 
+      font-size: $fs-2xl;
+      margin-bottom: 3rem;
+    }
+  
+    .about-line {
+      font-size: $fs-2xl;
+    }
+  
+    .brief-intro {
+      color: $clr-secondary; 
+      font-size: $fs-lg;
+      margin-bottom: 3rem;
+    }
+  
+    .resume {
+      max-width: 15rem;
+      font-size: $fs-lg;
+      text-align: center;
+      border: 2px solid $clr-primary;
+      background-color: $clr-secondary;
 
-  .name {
-    color: $clr-primary; 
-    font-weight: bold;
-    font-size: $fs-5xl;
+      &:hover{
+        background-color: lighten($color: $clr-secondary, $amount: 20);
+      }
+    }
+  }
+  
+  .profile-pic {
+    margin-top: 3rem;
+    img {
+      max-width: 25rem;
+      max-height: 25rem;
+      border-radius: 50%;
+      border: 2px solid $clr-primary;
+    }
+    
   }
 
-  .title {
-    color: $clr-primary; 
-    font-size: $fs-base;
-    margin-bottom: 3rem;
-  }
-
-  .about-line {
-    font-size: $fs-2xl;
-  }
-
-  .brief-intro {
-    color: $clr-secondary; 
-    font-size: $fs-base;
-    margin-bottom: 3rem;
-  }
-
-  .resume {
-    max-width: 10rem;
-  }
-}
-
-.profile-pic {
-  width: 25rem;
-  height: 25rem;
-  margin-top: 5rem;
-  img {
-    width: 100%; 
-    border: 5px solid $clr-primary;
-    border-radius: 100%;
-  }
 }

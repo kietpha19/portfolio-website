@@ -35,10 +35,19 @@ button:disabled {
   cursor: default;
 }
 
-#root,
-#main {
+#root {
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex: 1 1 0%;
+  overflow: auto;
+  margin-top: 76px;
+  margin-bottom: 90px;
 }

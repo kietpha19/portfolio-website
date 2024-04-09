@@ -51,6 +51,11 @@
       max-height: 25rem;
       border-radius: 50%;
       border: 2px solid $clr-primary;
+
+      @media screen and (max-width: $screen-md) {
+        max-width: 15rem;
+        max-height: 15rem;
+      }
     }
     
   }

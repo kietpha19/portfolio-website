@@ -3,40 +3,38 @@
     border: 1px solid #ddd; /* Adjust border style and color as needed */
     padding: 1rem; /* Adjust padding for spacing within the card */
     border-radius: 0.5rem; /* Add rounded corners */
-    width: 10rem; /* Set a fixed width for consistent card size */
+    width: 15rem; /* Set a fixed width for consistent card size */
     // min-height: 10rem; /* Set a fixed height for consistent card size */
     box-sizing: border-box; /* Include padding within the fixed height */
     text-align: center;
 
     .icon {
-        font-size: $fs-2xl;
+        font-size: $fs-5xl;
     }
 
     .name {
-        font-size: $fs-sm;
+        font-size: $fs-lg;
     }
 
     .level {
-        font-size: 1rem;
+        font-size: $fs-xs; 
     }
-
-
 }
 
-@media screen and (max-width: $screen-sm) {
+@media screen and (max-width: $screen-md) {
     .dev-skill {
-        width: 8rem;
+        width: 12rem;
 
         .icon {
-            font-size: $fs-lg;
+            font-size: $fs-3xl;
         }
     
         .name {
-            font-size: $fs-xs;
+            font-size: $fs-base;
         }
     
         .level {
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
     }
     

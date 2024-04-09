@@ -1,8 +1,7 @@
 .about-page{
-    margin-top: 48px;
-    margin-bottom: 48px;
-    padding-left: 1rem;
-    padding-right:1rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: $screen-lg;
 
     .experience {
         padding: 2rem;
@@ -15,12 +14,28 @@
 
         .text {
             color: $clr-primary;
-            font-size: $fs-lg;
+            font-size: $fs-3xl;
 
+            @media screen and (max-width: $screen-md) {
+                font-size: $fs-lg;
+            }
         }
 
         .year {
-            font-size: $fs-2xl;
+            font-size: $fs-3xl;
+
+            @media screen and (max-width: $screen-md) {
+                font-size: $fs-lg;
+            }
+        }
+
+        .intro{
+            color: $clr-secondary;
+            font-size: $fs-lg;
+
+            @media screen and (max-width: $screen-md) {
+                font-size: $fs-base;
+            }
         }
     }
 
@@ -31,14 +46,14 @@
         padding: 2rem;
         margin: auto;
 
-        @media screen and (max-width: $screen-sm) {
-            font-size: $fs-base;
+        @media screen and (max-width: $screen-md) {
+            font-size: $fs-lg;
         }
     }
 
     .skills-container {
-        // padding: 2rem;
-        margin: auto; 
+        margin: auto;
+        padding: 2rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

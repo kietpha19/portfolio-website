@@ -9,7 +9,7 @@ const AboutPage = () => {
 			<div className='experience'>
 				<p className='text'>Years of Experience</p>
 				<p className='year'>1+</p>
-				<p>
+				<p className='intro'>
 					I am presently employed as a Full-Stack Developer,
 					thoroughly enjoying the dynamic nature of the role while actively expanding my knowledge of full-stack technologies.
 					Additionally, my passion extends to AI technologies,

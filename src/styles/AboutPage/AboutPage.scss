@@ -1,19 +1,22 @@
 .about-page{
-    margin: 5%;
-    padding: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-left: 1rem;
+    padding-right:1rem;
 
     .experience {
         padding: 2rem;
         margin: auto;
         border: 1px solid $clr-background;
         border-radius: 5px;
-        width: 50rem;
+        max-width: 50rem;
         text-align: center;
         justify-content: center;
 
         .text {
             color: $clr-primary;
             font-size: $fs-lg;
+
         }
 
         .year {
@@ -27,10 +30,14 @@
         color: $clr-primary;
         padding: 2rem;
         margin: auto;
+
+        @media screen and (max-width: $screen-sm) {
+            font-size: $fs-base;
+        }
     }
 
     .skills-container {
-        padding: 2rem;
+        // padding: 2rem;
         margin: auto; 
         display: flex;
         flex-wrap: wrap;

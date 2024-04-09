@@ -9,7 +9,6 @@ import { name, title, briefIntro } from '../infor/personal';
 const HomePage = () => {
 	return (
 		<div className='home-page'>
-
 			<div className='about-me'>
 				<p className='name'>{name}</p>
 				<p className='title'>{title}</p>
@@ -26,7 +25,6 @@ const HomePage = () => {
 			<div className='profile-pic'>
 				<Image src={ProfilePic} roundedCircle />
 			</div>
-
 		</div>
 	);
 };

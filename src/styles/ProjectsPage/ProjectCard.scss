@@ -5,10 +5,8 @@
 	border-radius: 5px; /* Rounded corners */
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 	margin-bottom: 2rem; /* Add spacing between cards */
-	max-width: 40%;
-	min-width: 40%;
-	max-height: 25%;
-	min-height: 25%;
+	width: 20vw;
+	height: 20vh;
 	overflow: hidden;
 
 	&:hover {

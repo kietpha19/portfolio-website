@@ -7,7 +7,9 @@ const ProjectCard = ({ title, description, sourceLink, demoLink }) => {
 			<p className='title'>{title}</p>
 			<p className='description'>{description}</p>
 			<a href={sourceLink} target="_blank" rel="noreferrer">Source</a>
-			<a href={demoLink} target="_blank" rel="noreferrer">Demo</a>
+			{demoLink
+				? <a href={demoLink} target="_blank" rel="noreferrer">Demo</a>
+				: ''}
 		</div>
 	);
 };

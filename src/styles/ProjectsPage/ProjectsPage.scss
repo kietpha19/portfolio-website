@@ -1,6 +1,24 @@
 .projects-page {
-  margin: 10%;
-  padding: auto;
-  justify-content: space-around;
-  display: flex;
+  padding: 2rem;
+  width: 100%;
+  max-width: $screen-lg;
+  margin: 0 auto;
+
+  .header {
+    font-size: $fs-2xl;  
+    margin-bottom: 1rem;
+    text-align: center;
+    color: $clr-primary;
+  }
+
+  .projects-container {
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  
 }

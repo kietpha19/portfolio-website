@@ -1,3 +1,41 @@
-.Project-Card {
-    border: 5px solid;
+.project-card {
+	background-color: bisque;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 5px; /* Rounded corners */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	margin-bottom: 2rem; /* Add spacing between cards */
+	max-width: 40%;
+	min-width: 40%;
+	max-height: 25%;
+	min-height: 25%;
+	overflow: hidden;
+
+	&:hover {
+		overflow-y: auto; /* Show scrollbar on hover */
+	}
+
+	.title {
+		font-size: $fs-lg;
+		font-weight: bold;
+		color: $clr-primary;
+		margin-bottom: 1rem;
+	}
+
+	.description {
+		font-size: $fs-base;
+		color: $clr-secondary;
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: #007bff; 
+		text-decoration: none; 
+		margin-right: 1rem;
+	}
+
+	a:hover {
+		text-decoration: underline; /* Underline on hover */
+		cursor: pointer; /* Indicate clickable link */
+	}
 }
